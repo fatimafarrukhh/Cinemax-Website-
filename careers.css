@@ -1,0 +1,41 @@
+body{
+    background-color: bisque;
+
+}
+.main{
+    width:850px;
+    margin: 80px auto 0px auto;
+}
+
+.content1{
+    display: flow-root;
+    background-color: rgba(0,0,0,0.5);
+    width:100%;
+    font-size:18px;
+    border-radius: 10px;
+    border:1px solid rgba(255,255,255,0.3);
+    box-shadow: 2px 2px 15px
+    rgba(0,0,0,0.3);
+    color:#ffff;
+
+}
+
+.content1 h3{
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-style: 600px;
+    position:relative;
+    margin-left: 350px;
+}
+
+.info{
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.info .job{
+    text-transform: capitalize;
+}

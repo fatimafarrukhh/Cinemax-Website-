@@ -1,0 +1,21 @@
+*{
+    margin: 0 ;
+    padding : 0;
+    
+}
+
+body{
+    background: #101820FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width : 10000px;
+    min-height: 100px;
+    background: #F2AA4CFF;
+}

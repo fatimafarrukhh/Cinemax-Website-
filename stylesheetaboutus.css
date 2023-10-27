@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: #F2AA4CFF;
+    text-align: center;
+    line-height: 93px;
+}
+
+#logo {
+    height: 77px;
+}
+
+#logo img {
+    height: 53px;
+    margin: 4px 40px;        /* Top, Left*/
+    
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0px 20px;      
+}
+
+#navbar ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+#navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background: black;
+    left: 0;
+    bottom: 35px;
+    transition: 0.5s ease;
+}
+
+#navbar ul li:hover::after {
+    width: 100%;
+}
+/* ending navbar */
+
+
+/*Section */
+.section {
+    width: 100%;
+    background-color: bisque;
+}
+
+/* 
+.content-section {
+    float: center;
+} */
+
+.image-section img {
+    width: 100%;
+}
+
+.content-section .title {
+    text-transform: uppercase;
+    font-size: 28px;
+    padding-bottom: 4rem;
+    line-height: 530%;
+}
+
+.content-section .content p {
+    /* margin-top: 42px; */
+    /* font-family: sans-serif; */
+    font-size: 22px;
+    line-height: 1.5;
+    margin: -50px 400px 30px 300px;
+    text-align: justify;
+}
+
+.content-section .content .button {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 350px;
+
+}
+
+.content-section .content .button a {
+    background-color: #3d3d3d;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+
+.content-section .content .button a:hover {
+    background-color: #a5a5a5;
+}
+
+
+/* Page 1 of About US */
+.container2 .content-section1 .title h1 {
+    margin-top: 40px;
+    font-size: 50px;
+}
+
+.container2 {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+}
+
+.content-section1 .content2 p {
+    margin-top: 45px;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+
+/* footer */
+footer .container1 {
+    margin-top: -4px;
+    width: 100%;
+    padding: 50px 0px;                    /* Top, Left*/
+    background-color: black;
+    display: flex;
+}
+
+footer .container1 div {
+    text-align: center;
+}
+
+.container1 div h3 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/*Underline*/
+.container1 .col-1 h3::before {
+    content: " ";
+    bottom: 0;
+    left: 41px;
+    width: 56px;
+    height: 2px;
+    background-color: rgb(255, 0, 0);
+}
+
+.container1 .col-2 h3::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 335px;
+    width: 75px;
+    height: 2px;
+    background-color: rgb(255, 0, 0);
+}
+
+.container1 .col-3 h3::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 44px;
+    width: 59px;
+    height: 2px;
+    background-color: rgb(255, 0, 0);
+}
+
+/* Col 1*/
+.col-1 {
+    width: 200px;
+}
+
+.col-1 .info li {
+    display: flex;
+    margin: 16px;
+
+}
+
+.col-1 .info li span:nth-child(1) {
+    color: gold;
+    font-size: 14px;
+    margin-right: 9px;
+    cursor: pointer;
+}
+
+.col-1 .info li span:nth-child(1):hover {
+    color: #fff;
+}
+
+.col-1 .info li p {
+    color: bisque;
+    font-size: 15px;
+}
+
+.col-1 .info li p:hover {
+    color: white;
+}
+/*For phone*/
+.col-1 .info li a {
+    color: bisque;
+    text-decoration: none;
+    font-size: 15px;
+}
+.col-1 .info li a:hover {
+    color: white;
+}
+
+/*Ending  Col 1*/
+
+
+/* Col 2 */
+.col-2 {
+    flex-grow: 1;
+}
+
+
+/* Underline */
+form input {
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: none;
+}
+
+form button {
+    background: transparent;
+    border: 3px solid gold;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;  
+    /*10 px from top & bottom, 30 px from left & Right*/
+    cursor: pointer;
+}
+
+/* End col2 */
+
+/* Col3 */
+.socialicons {
+    margin-bottom: 10px;
+    display: flex;
+
+}
+
+.socialicons li {
+    list-style: none;
+}
+
+.socialicons li a {
+    width: 30px;
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 22px;
+    margin: 10px;
+    color: gold;
+}
+
+.socialicons li a:hover {
+    font-size: 22px;
+    color: white;
+}
+
+
+.quicklinks ul li a {
+    color: bisque;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quicklinks ul li a:hover {
+    color: #fff;
+}
+
+/* End Col3 */
